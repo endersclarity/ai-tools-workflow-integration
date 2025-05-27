@@ -82,8 +82,12 @@ export default function ProgressPage() {
     totalSessions: workoutSessions.length,
     totalDuration: workoutSessions.reduce((sum, session) => sum + (session.totalDuration || 0), 0),
     totalCalories: workoutSessions.reduce((sum, session) => sum + (session.caloriesBurned || 0), 0),
-    averageFormScore: workoutSessions.filter(s => s.formScore).reduce((sum, session, _, arr) => 
-      sum + (session.formScore || 0) / arr.length, 0),
+    averageFormScore: (() => {
+      const sessionsWithScore = workoutSessions.filter(s => s.formScore);
+      return sessionsWithScore.length > 0 
+        ? sessionsWithScore.reduce((sum, session) => sum + (session.formScore || 0), 0) / sessionsWithScore.length
+        : 0;
+    })(),
     thisWeekSessions: workoutSessions.filter(session => {
       const sessionDate = new Date(session.createdAt);
       const weekAgo = new Date();
