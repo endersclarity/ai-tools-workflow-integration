@@ -1,0 +1,46 @@
+{
+  "mcpServers": {
+    "desktop-commander": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@wonderwhy-er/desktop-commander@latest"
+      ],
+      "env": {}
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {}
+    },
+    "browsermcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@browsermcp/mcp"
+      ],
+      "env": {}
+    },
+    "exa": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "exa-mcp-server"
+      ],
+      "env": {
+        "EXA_API_KEY": "1f8994cc-0dcf-4899-9588-1665b18c0b91"
+      }
+    },
+    "youtube-transcript": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@kimtaeyoon83/mcp-server-youtube-transcript"
+      ],
+      "env": {}
+    }
+  }
+}

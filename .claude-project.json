@@ -1,0 +1,50 @@
+{
+  "projectName": "AI Tools Workflow Integration",
+  "projectType": "integration-platform",
+  "description": "Seamless workflow integration between Figma, Stitch, Replit, and Google AI Studio",
+  "keymap": {
+    "system_manifest": "memory-bank/system_manifest.md",
+    "figma_module": "memory-bank/figma_integration_module.md",
+    "data_pipeline": "memory-bank/data_pipeline_module.md", 
+    "cloud_dev": "memory-bank/cloud_development_module.md",
+    "ai_integration": "memory-bank/ai_integration_module.md",
+    "orchestration": "memory-bank/workflow_orchestration_module.md",
+    "mcp_infra": "memory-bank/mcp_infrastructure_module.md",
+    "roadmap": "memory-bank/project_roadmap.md",
+    "figma_stress_test": "memory-bank/implementation_plan_figma_stress_test.md",
+    "api_test_task": "memory-bank/task_test_figma_basic_api.md",
+    "blueprint": "docs/workflow-design/ai-tools-integration-blueprint.md",
+    "mcp_setup": "docs/mcp-setup-summary.md",
+    "api_keys": "docs/api-keys-guide.md"
+  },
+  "platforms": {
+    "figma": {
+      "api_configured": true,
+      "mcp_server": "figma",
+      "token_status": "validated"
+    },
+    "stitch": {
+      "api_configured": false,
+      "mcp_server": "stitch", 
+      "status": "research_phase"
+    },
+    "replit": {
+      "api_configured": false,
+      "mcp_server": null,
+      "status": "research_phase"
+    },
+    "google_ai_studio": {
+      "api_configured": false,
+      "mcp_server": null,
+      "status": "research_phase"
+    }
+  },
+  "mcp_servers": [
+    "browsermcp", "desktop-commander", "figma", "github", 
+    "memory", "playwright", "sequential-thinking", "youtube-transcript",
+    "context7", "gitdocs", "stitch", "wordpress-mcp", "sqlite", 
+    "fetch", "filesystem"
+  ],
+  "current_phase": "foundation_infrastructure",
+  "next_milestone": "figma_integration_stress_test"
+}
