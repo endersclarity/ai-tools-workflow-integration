@@ -1,7 +1,7 @@
-# Module: Data Pipeline (Stitch Integration)
+# Module: Stitch Design Integration (Google Stitch)
 
 ## Purpose & Responsibility
-Manages ETL workflows and data synchronization across the AI tools ecosystem. Handles data ingestion from design analytics, user behavior tracking, performance metrics, and cross-platform data flows. Provides automated data transformation and loading into data warehouses for AI-driven insights and decision-making workflows.
+Integrates with Google's Stitch AI design tool for automated UI design generation and workflow automation. Handles design prompt processing, AI-generated design retrieval, and seamless export to Figma for further development. Provides the design generation foundation for the complete design-to-code pipeline.
 
 ## Interfaces
 * `StitchAPI`: ETL pipeline management and data integration
